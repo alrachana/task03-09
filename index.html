@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let str="abcdefghijklmnopqrstuvwxyz"///["abcd","efgh","ijkl"........"yz"]
+
+
+// * * * * *
+//   *      * 
+//     *    *
+//       *  *
+//          * 
+
+
+rows=5
+for(i=1;i<=rows;i++){
+    s=" "
+    for(j=1;j<=rows;j++){
+        if(i==1||j==rows||i==j){
+            s=s+"*"+" "
+        }else{
+            s=s+" "+" "
+        }
+    }
+    console.log(s)
+}
+
+
+// * * * * *
+//  *      *
+//   *    *
+//    *  *
+//      *
+
+for(o=1;0<=rows;i++){
+    s=""
+    for(sp=0;sp<i-1;sp++){
+        s=s+" "
+    }
+    for(p=1;p<=rows;p++){
+        if(o==1||p==1||o+p==rows+1){
+            s=s+"*"+" "
+        }else{
+            s=s+" "+" "
+        }
+    }
+    console.log(s)
+}
+
+
+    </script>
+</body>
+</html>
